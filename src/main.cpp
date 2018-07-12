@@ -20,8 +20,8 @@ struct ledFxMode {
 uint8_t fxIndex = 0;
 ledFxMode fxModes[FX_NUM_MODES] = {{FX_MODE_RAINBOW_CYCLE, 0x000000, 8192, 255},
                                   {FX_MODE_BREATH, 0xdd550c, 512, 255},
-                                  {FX_MODE_COLOR_WIPE_RANDOM, 0x000000, 256, 25},
-                                  {FX_MODE_FIREWORKS_RANDOM, 0x000000, 64, 25},
+                                  {FX_MODE_COLOR_WIPE_RANDOM, 0x000000, 256, 255},
+                                  {FX_MODE_COMET, 0xdd550c, 512, 255},
                                   {FX_MODE_STATIC, 0x000000, 0, 0}};
 
 boolean isOn = true;
