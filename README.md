@@ -1,6 +1,11 @@
 # big-switch
 
-A simple Arduino sketch for a Teensy 2.0-powered lamp base for the NovelKeys Big Switch.
+A simple PlatformIO/Arduino sketch for a Teensy 2.0-powered lamp base for the NovelKeys Big Switch.
+
+# Dependencies
+
+* [WS2812FX](https://github.com/kitesurfer1404/WS2812FX)
+* [Bounce 2](https://github.com/thomasfredericks/Bounce2)
 
 # Parts manifest
 
