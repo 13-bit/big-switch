@@ -5,7 +5,7 @@
 #define LED_PIN PIN_D5
 #define BUTTON_PIN PIN_B0
 
-#define FX_NUM_MODES 5
+#define FX_NUM_MODES 6
 
 WS2812FX ws2812fx = WS2812FX(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 Bounce debouncer = Bounce();
@@ -19,9 +19,10 @@ struct ledFxMode {
 
 uint8_t fxIndex = 0;
 ledFxMode fxModes[FX_NUM_MODES] = {{FX_MODE_RAINBOW_CYCLE, 0x000000, 8192, 255},
-                                  {FX_MODE_BREATH, 0xdd550c, 512, 255},
-                                  {FX_MODE_COLOR_WIPE_RANDOM, 0x000000, 256, 255},
-                                  {FX_MODE_COMET, 0xdd550c, 512, 255},
+                                  {FX_MODE_BREATH, ORANGE, 512, 255},
+                                  {FX_MODE_STATIC, ORANGE, 0, 255},
+                                  {FX_MODE_BREATH, CYAN, 512, 255},
+                                  {FX_MODE_STATIC, CYAN, 0, 255},
                                   {FX_MODE_STATIC, 0x000000, 0, 0}};
 
 boolean isOn = true;
